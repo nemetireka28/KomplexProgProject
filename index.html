@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <title>Labrador nevelde!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="container">
+        <nav class="mynavbar">
+            <button id="karakter_gomb" onclick="switch_to_profil()">Kutyusom</button>
+            <button id="park_gomb" onclick="switch_to_park()">Park</button>
+            <button id="bolt_gomb" onclick="switch_to_bolt()">Bolt</button>
+            <button onclick="kovetkezo_szint()">Szintlépés</button>
+        </nav>
+
+        <div id="profil_oldal" class="oldal">
+            <div class="row">
+                <div class="col-md-4 pics_holder">
+                    <img src="k1.jpg" id="kepek">
+                </div>
+                <div class="col-md-8">
+                    <p id="leiras"></p>
+                    <ul>
+                        <li>Pénz: <b id="profil_penz"></b> </li>
+                        <li>Táp: <b id="profil_tap"></b> <button onclick="update_tap()" class="addButtons">+</button> </li>
+                        <li>Víz: <b id="profil_viz"></b> <button onclick="update_viz()" class="addButtons">+</button></li>
+                        <li>Játék: <b id="profil_jatek"></b> <button onclick="update_jatek()" class="addButtons">+</button></li>
+                        <li>Öröm: <b id="profil_orom"></b> <button onclick="update_orom()" class="addButtons">+</button></li>
+                        <li>Fáradtság: <b id="profil_faradtsag"></b> <button onclick="update_faradtsag()" class="addButtons">+</button> </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="park_oldal" class="oldal">
+            <div id="park"></div>
+            <button onclick="park_jatek()">Indulhat a barátkozás!</button>
+        </div>
+        <div id="bolt_oldal" class="oldal">
+            <div id="bolt"></div>
+            <label>Üdvözölünk a boltban!</label></br>
+        <select id="vasarlas" onchange="boltika()">
+            <option value="50">Póráz</option>
+            <option value="200">Ház</option>
+            <option value="20">Tál</option>
+            <option value="80">Játék</option>
+        </select>
+        <input type="button" value="Vásárlás" id="gomb">
+        <ul >
+            <li id="lista">Póráz: 50 ft<img src="poraz.jpg" id="kepek_2"></li>
+            <li id="lista">Ház: 200 ft<img src="haz.jpg" id="kepek_2"></li>
+            <li id="lista">Tál: 20 ft<img src="tal.jpg" id="kepek_2"></li>
+            <li id="lista">Játék: 80 ft<img src="jatek.jpg" id="kepek_2"></li>
+        </ul>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="spa.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

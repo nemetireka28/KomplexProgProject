@@ -1,0 +1,72 @@
+@import url('https://fonts.google.com/specimen/Balsamiq+Sans#standard-styles');
+
+body{
+    margin: 0;
+    background-color: #64420D;
+    color: #DEAF66;
+    font-family: 'Balsamiq', cursive;
+}
+
+.container nav{
+    height: 80px;
+    background-color: #B98E4A;
+}
+
+nav button{
+    height: 60px;
+    margin-top: 12px;
+    margin-left: 230px;
+    border-radius: 20px 0px 20px 0px;
+}
+nav button:hover{
+	background-color:black;
+	color:white;
+	border-radius: 0px 20px 0px 20px;
+}
+
+.oldal{
+    min-height: calc(100vh - 100px);
+    padding: 50px;
+}
+ul{
+    list-style-type: none;
+    margin-left: 150px;
+    
+}
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: #B98E4A;
+}
+
+#profil_oldal{
+    background-color: #64420D(233, 168, 202);
+}
+
+#park_oldal{
+    background-color:#B98E4A;
+    color: #64420D;
+    display: none;
+}
+#bolt_oldal{
+    background-color:#B98E4A;
+    color: #64420D;
+    display: none;
+}
+
+#kepek{
+    width:100%;
+    margin-left: 150px;
+    margin-top: 105px;
+}
+#leiras{
+    margin-left: 150px;
+    margin-top: 100px;
+}
+#kepek_2{
+    width:20%;
+    margin-left: 20px;
+}
+#lista{
+    display: inline;
+}
